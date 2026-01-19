@@ -57,5 +57,14 @@ docker compose up --build
 ```
 ---
 
+5.3 Résultats générés
 
+Après exécution, le dossier data/ contient :
+
+data/
+├── downscaled/video_downscaled.mp4
+├── subtitles/subtitles.srt
+└── metadata/
+    ├── language.json
+    └── animals.json
 
