@@ -59,14 +59,8 @@ docker compose up --build
 
 5.3 Résultats générés
 
-Après exécution, le dossier data/ contient :
+Après exécution, le dossier data/ contient de nouveaux fichiers
 
-data/
-├── downscaled/video_downscaled.mp4
-├── subtitles/subtitles.srt
-└── metadata/
-    ├── language.json
-    └── animals.json
 ---
 
 ## 6. Description des Pods (conteneurs)
