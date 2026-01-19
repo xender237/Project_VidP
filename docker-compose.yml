@@ -1,1 +1,30 @@
+version: "3.8"
+
+services:
+  downscale:
+    build: ./services/downscale
+    volumes:
+      - ./videos:/videos
+      - ./data:/data
+
+  lang_ident:
+    build: ./services/lang_ident
+    volumes:
+      - ./data:/data
+    depends_on:
+      - downscale
+
+  subtitle:
+    build: ./services/subtitle
+    volumes:
+      - ./data:/data
+    depends_on:
+      - lang_ident
+
+  animal_detect:
+    build: ./services/animal_detect
+    volumes:
+      - ./data:/data
+    depends_on:
+      - subtitle
 
