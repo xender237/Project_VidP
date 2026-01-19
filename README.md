@@ -27,3 +27,24 @@ Le pipeline automatise le traitement de vidéos stockées localement, génère d
 
 ### Vue d’ensemble
 
+Machine locale (Edge)
+│
+├── Vidéos (.mp4)
+├── Pipeline Docker
+│ ├── Downscale Pod
+│ ├── LangIdent Pod
+│ ├── Subtitle Pod
+│ └── Animal Detect Pod
+│
+└── Résultats (data/)
+↓
+Cloud AWS
+│
+├── EC2 (VM)
+│ ├── Scripts d’upload
+│ ├── Serveur Web (NGINX)
+│
+├── S3 (stockage vidéos)
+└── DynamoDB (métadonnées)
+
+
