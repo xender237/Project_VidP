@@ -69,7 +69,7 @@ data/
     └── animals.json
 ---
 
-6. Description des Pods (conteneurs)
+## 6. Description des Pods (conteneurs)
 Downscale Pod
 
 Compression et redimensionnement de la vidéo
@@ -98,7 +98,7 @@ Implémentation légère sans GPU (contexte TP)
 
 ---
 
-7. Déploiement Cloud AWS
+## 7. Déploiement Cloud AWS
 7.1 Services utilisés
 
 EC2 (t2.micro / t3.micro) – VM Linux
@@ -134,7 +134,7 @@ pip3 install boto3
 
 ---
 
-8. Transfert des résultats vers le Cloud
+## 8. Transfert des résultats vers le Cloud
 
 Depuis la machine locale :
 
@@ -142,7 +142,7 @@ scp -i videop.pem -r data ubuntu@<IP_EC2>:/home/ubuntu/
 
 ---
 
-9. Upload vers Amazon S3
+## 9. Upload vers Amazon S3
 
 Créer un bucket S3 (nom unique)
 
@@ -154,7 +154,7 @@ python3 cloud/upload_to_s3.py
 
 ---
 
-10. Stockage des métadonnées dans DynamoDB
+## 10. Stockage des métadonnées dans DynamoDB
 
 Créer une table DynamoDB :
 
@@ -166,7 +166,7 @@ python3 cloud/dynamodb.py
 
 ---
 
-11. Déploiement de la page web publique
+## 11. Déploiement de la page web publique
 sudo cp web/index.html /var/www/html/index.html
 sudo systemctl restart nginx
 
@@ -180,7 +180,7 @@ La page affiche la vidéo stockée sur S3.
 
 ---
 
-12. Limites du projet
+## 12. Limites du projet
 
 Détection d’animaux simplifiée (pas de modèle IA lourd)
 
@@ -192,13 +192,13 @@ Déploiement Cloud temporaire (TP académique)
 
 ---
 
-13. Conclusion
+## 13. Conclusion
 
 Ce projet démontre la mise en place d’un pipeline hybride de traitement vidéo, combinant conteneurisation locale et services Cloud AWS.
 Il illustre concrètement les concepts fondamentaux du Cloud Computing : distribution, stockage distant, services managés et exposition publique.
 
 ---
 
-14. Auteurs
+## 14. Auteurs
 
 Projet réalisé dans le cadre du cours de Cloud Computing.
