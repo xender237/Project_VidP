@@ -1,19 +1,24 @@
 version: "3.8"
 
+# Définition des services du pipeline vidéo
 services:
+
+  #  Service de compression / redimensionnement
   downscale:
     build: ./services/downscale
     volumes:
-      - ./videos:/videos
-      - ./data:/data
+      - ./videos:/videos       # vidéos en entrée
+      - ./data:/data           # résultats en sortie
 
+  #  Service de détection de langue
   lang_ident:
     build: ./services/lang_ident
     volumes:
       - ./data:/data
     depends_on:
-      - downscale
+      - downscale              # s’exécute après downscale
 
+  #  Service de génération de sous-titres
   subtitle:
     build: ./services/subtitle
     volumes:
@@ -21,10 +26,10 @@ services:
     depends_on:
       - lang_ident
 
+  #  Service de détection d’animaux
   animal_detect:
     build: ./services/animal_detect
     volumes:
       - ./data:/data
     depends_on:
       - subtitle
-
