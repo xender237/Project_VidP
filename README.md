@@ -27,24 +27,24 @@ Le pipeline automatise le traitement de vidéos stockées localement, génère d
 
 ### Vue d’ensemble
 
-Machine locale (Edge)
-│
-├── Vidéos (.mp4)
-├── Pipeline Docker
-│ ├── Downscale Pod
-│ ├── LangIdent Pod
-│ ├── Subtitle Pod
-│ └── Animal Detect Pod
-│
-└── Résultats (data/)
-↓
-Cloud AWS
-│
-├── EC2 (VM)
-│ ├── Scripts d’upload
-│ ├── Serveur Web (NGINX)
-│
-├── S3 (stockage vidéos)
-└── DynamoDB (métadonnées)
+
+## 4. Structure du dépôt
+
+
+---
+
+## 5. Exécution du pipeline en local (Docker)
+
+### 5.1 Prérequis
+
+- Docker ≥ 20.x
+- Docker Compose
+- Système Linux / Windows / macOS
+
+Vérification :
+```bash
+docker --version
+docker compose version
+
 
 
