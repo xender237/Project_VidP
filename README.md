@@ -45,6 +45,15 @@ Vérification :
 ```bash
 docker --version
 docker compose version
+```
 
+### 5.2 Lancer le pipeline
+
+Placer une vidéo .mp4 dans le dossier : videos/input.mp4
+
+Lancer le pipeline :
+```bash
+docker compose up --build
+```
 
 
