@@ -27,6 +27,8 @@ Le pipeline automatise le traitement de vidéos stockées localement, génère d
 
 ### Vue d’ensemble
 
+![Architecture Globale](./Archi.png)
+
 
 ## 4. Structure du dépôt
 
