@@ -125,20 +125,26 @@ Ports ouverts :
 
 Connexion :
 
+```bash
 ssh -i videop.pem ubuntu@<IP_EC2>
+```
 
 7.3 Installation des dépendances sur EC2
+
+```bash
 sudo apt update
 sudo apt install -y python3-pip nginx
 pip3 install boto3
-
+```
 ---
 
 ## 8. Transfert des résultats vers le Cloud
 
 Depuis la machine locale :
 
+```bash
 scp -i videop.pem -r data ubuntu@<IP_EC2>:/home/ubuntu/
+```
 
 ---
 
@@ -150,7 +156,9 @@ Configurer les droits IAM (S3 + DynamoDB)
 
 Exécuter sur EC2 :
 
+```bash
 python3 cloud/upload_to_s3.py
+```
 
 ---
 
@@ -162,19 +170,23 @@ Partition Key : video_id
 
 Exécuter :
 
+```bash
 python3 cloud/dynamodb.py
-
+```
 ---
 
 ## 11. Déploiement de la page web publique
+```bash
 sudo cp web/index.html /var/www/html/index.html
 sudo systemctl restart nginx
+```
 
 
 Accès :
 
+```bash
 http://<IP_EC2>
-
+```
 
 La page affiche la vidéo stockée sur S3.
 
