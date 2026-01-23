@@ -51,7 +51,7 @@ git --version
 git clone https://github.com/xender237/Project_VidP.git
 cd Project_VidP
 ```
-### 5.2 Lancer le pipeline
+## 5.2 Lancer le pipeline
 
 Placer une vidéo .mp4 dans le dossier : videos/input.mp4
 
@@ -59,6 +59,19 @@ Lancer le pipeline :
 ```bash
 docker compose up --build
 ```
+### Étapes exécutées automatiquement
+
+Le pipeline local exécute les services suivants :
+
+Downscale Pod : Compression et réduction de la résolution vidéo
+
+LangIdent Pod : Détection de la langue parlée (audio)
+
+Subtitle Pod : Génération des sous-titres à partir de l’audio
+
+Animal Detect Pod : Détection d’animaux à l’aide d’un modèle de vision par ordinateur
+
+Chaque service lit les résultats du précédent via un volume Docker partagé.
 ---
 
 5.3 Résultats générés
