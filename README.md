@@ -75,10 +75,11 @@ Chaque service lit les résultats du précédent via un volume Docker partagé.
 
 ---
 
-5.3 Résultats générés
-
+## 5.3 Résultats générés
 Après exécution, le dossier data/ contient de nouveaux fichiers
+
 ![Architecture Globale](./structure.png)
+
 ---
 
 ## 6. Description des Pods (conteneurs)
