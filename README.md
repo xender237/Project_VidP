@@ -196,7 +196,7 @@ Pas de montée en charge (scalabilité non testée)
 
 Sous-titres simulés
 
-Déploiement Cloud temporaire (TP académique)
+Déploiement Cloud temporaire 
 
 ---
 
