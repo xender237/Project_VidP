@@ -48,7 +48,7 @@ git --version
 ```
 #### Cloner le dépôt
 ```bash
-git clone https://github.com/xender237/Project_VidP.git
+git clone https://github.com/xender237/Project_VidP
 cd Project_VidP
 ```
 ## 5.2 Lancer le pipeline
