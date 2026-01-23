@@ -1,5 +1,5 @@
 # VideoP – Pipeline hybride de traitement vidéo
-
+# -- DOCUMENTATION --
 ## 1. Présentation du projet
 
 **VideoP** est un pipeline hybride de traitement vidéo conçu dans le cadre du cours de **Cloud Computing**.  
