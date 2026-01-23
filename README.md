@@ -29,10 +29,6 @@ Le pipeline automatise le traitement de vidéos stockées localement, génère d
 
 ![Architecture Globale](./Archi.png)
 
-
-## 4. Structure du dépôt
-
-
 ---
 
 ## 5. Exécution du pipeline en local (Docker)
@@ -42,13 +38,19 @@ Le pipeline automatise le traitement de vidéos stockées localement, génère d
 - Docker ≥ 20.x
 - Docker Compose
 - Système Linux / Windows / macOS
+- git 
 
 Vérification :
 ```bash
 docker --version
 docker compose version
+git --version
 ```
-
+#### Cloner le dépôt
+```bash
+git clone https://github.com/xender237/Project_VidP.git
+cd Project_VidP
+```
 ### 5.2 Lancer le pipeline
 
 Placer une vidéo .mp4 dans le dossier : videos/input.mp4
