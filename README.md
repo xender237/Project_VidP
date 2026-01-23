@@ -72,6 +72,7 @@ Subtitle Pod : Génération des sous-titres à partir de l’audio
 Animal Detect Pod : Détection d’animaux à l’aide d’un modèle de vision par ordinateur
 
 Chaque service lit les résultats du précédent via un volume Docker partagé.
+
 ---
 
 5.3 Résultats générés
