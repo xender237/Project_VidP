@@ -77,35 +77,18 @@ Chaque service lit les résultats du précédent via un volume Docker partagé.
 5.3 Résultats générés
 
 Après exécution, le dossier data/ contient de nouveaux fichiers
-
+![Architecture Globale](./structure.png)
 ---
 
 ## 6. Description des Pods (conteneurs)
-Downscale Pod
+Downscale Pod : Compression et redimensionnement de la vidéo, Utilise FFmpeg.
 
-Compression et redimensionnement de la vidéo
+LangIdent Pod: Détection de la langue parlée (simulation via texte), Génère un fichier JSON de métadonnées.
 
-Utilise FFmpeg
+Subtitle Pod : Génération de sous-titres au format SRT
 
-LangIdent Pod
-
-Détection de la langue parlée (simulation via texte)
-
-Génère un fichier JSON de métadonnées
-
-Subtitle Pod
-
-Génération de sous-titres au format SRT
-
-Simulation académique
-
-Animal Detect Pod
-
-Analyse de frames vidéo
-
-Détection simplifiée d’animaux
-
-Implémentation légère sans GPU (contexte TP)
+Animal Detect Pod : Analyse de frames vidéo, Détection simplifiée d’animaux
+Implémentation légère sans GPU 
 
 ---
 
